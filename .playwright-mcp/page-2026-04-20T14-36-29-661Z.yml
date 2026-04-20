@@ -1,0 +1,43 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]: mbai｜赛博嘴脸图鉴
+    - paragraph [ref=e6]: 20题 · 2分钟 · 一针见血
+    - heading "你和 AI 聊起来， 到底像什么货色？" [level=1] [ref=e7]:
+      - text: 你和 AI 聊起来，
+      - text: 到底像什么货色？
+    - paragraph [ref=e8]: 这不是学术人格测试，也不是效率诊断书。这是把你在 AI 面前的赛博嘴脸， 用最毒但最能发的方式钉成一张身份牌。
+    - generic [ref=e9]:
+      - button "开始测试" [ref=e10] [cursor=pointer]
+      - button "先看结果长什么样" [ref=e11] [cursor=pointer]
+    - text: MB
+  - generic [ref=e12]:
+    - article [ref=e13]:
+      - text: STAMP
+      - paragraph [ref=e14]: CTRL
+      - heading "赛博甲方" [level=2] [ref=e15]
+      - paragraph [ref=e16]: 你不是在跟 AI 聊天，你是在给数字牛马开需求会。
+    - article [ref=e17]:
+      - text: STAMP
+      - paragraph [ref=e18]: VOID
+      - heading "电子树洞" [level=2] [ref=e19]
+      - paragraph [ref=e20]: 凌晨三点，你正在给 AI 发一段不会发给任何人的小作文。
+    - article [ref=e21]:
+      - text: STAMP
+      - paragraph [ref=e22]: POLY
+      - heading "模型海王" [level=2] [ref=e23]
+      - paragraph [ref=e24]: 四个 AI 标签页正在互相吃醋，而你在端水。
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - heading "你会得到什么" [level=3] [ref=e27]
+      - list [ref=e28]:
+        - listitem [ref=e29]: 1 个主人格
+        - listitem [ref=e30]: 2 个副标签恶习
+        - listitem [ref=e31]: 1 张可截图分享的结果卡
+        - listitem [ref=e32]: 3 版能直接复制的提示词
+    - generic [ref=e33]:
+      - heading "这个版本不做什么" [level=3] [ref=e34]
+      - list [ref=e35]:
+        - listitem [ref=e36]: 不做严肃心理学
+        - listitem [ref=e37]: 不做付费功能
+        - listitem [ref=e38]: 不做复杂后台
+        - listitem [ref=e39]: 只先验证有没有人愿意测、愿意发

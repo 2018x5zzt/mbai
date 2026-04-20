@@ -1,0 +1,91 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: mbai｜赛博嘴脸图鉴
+        - generic [ref=e8]: CTRL
+        - paragraph [ref=e9]: 需求暴君
+        - heading "赛博甲方" [level=1] [ref=e10]
+        - paragraph [ref=e11]: 你不是在跟 AI 聊天，你是在给数字牛马开需求会。
+        - generic [ref=e13]: SHOW｜晒命狂
+      - generic [ref=e14]:
+        - paragraph [ref=e15]: 现在就发
+        - generic [ref=e16]:
+          - button "截图保存" [ref=e17] [cursor=pointer]
+          - button "复制文案" [ref=e18] [cursor=pointer]
+          - button "再测一次" [ref=e19] [cursor=pointer]
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - paragraph [ref=e23]: mbai｜赛博嘴脸图鉴
+          - paragraph [ref=e24]: 需求暴君
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - heading "赛博甲方" [level=2] [ref=e27]
+            - paragraph [ref=e28]: 你不是在跟 AI 聊天，你是在给数字牛马开需求会。
+          - generic [ref=e29]: CTRL
+        - generic [ref=e31]: SHOW｜晒命狂
+      - generic [ref=e32]:
+        - generic [ref=e33]: 人格档案
+        - generic [ref=e34]:
+          - article [ref=e35]:
+            - paragraph [ref=e36]: 罪状
+            - paragraph [ref=e37]: 你把 AI 当 24 小时待命的乙方，连“请”字都懒得打，结尾永远跟着“不对 / 重来 / 太水了”。
+          - article [ref=e38]:
+            - paragraph [ref=e39]: 现场还原
+            - paragraph [ref=e40]: 复制一段需求，末尾加一句“你重新生成”，然后连发三次。
+          - article [ref=e41]:
+            - paragraph [ref=e42]: 赦免书
+            - paragraph [ref=e43]: 虽然你把 AI 当牛马，但你确实很擅长把“我觉得不太对”翻译成具体修改意见。
+      - generic [ref=e44]:
+        - generic [ref=e45]: 恶习叠加
+        - heading "你的毛病不是没有，是叠在一起更具体了。" [level=3] [ref=e46]
+        - paragraph [ref=e47]: 你这次最明显的毛病是晒命狂：聊完第一反应就是截图发出去
+        - article [ref=e49]:
+          - paragraph [ref=e50]: SHOW
+          - heading "晒命狂" [level=4] [ref=e51]
+          - paragraph [ref=e52]: 截图聊天记录到处发。
+      - generic [ref=e53]:
+        - article [ref=e54]:
+          - generic [ref=e55]: 关系网络
+          - heading "你不是单机人格，你有宿敌，也有互补搭子。" [level=3] [ref=e56]
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - paragraph [ref=e59]: 宿敌人格
+              - heading "DUMP｜代码乞丐" [level=4] [ref=e60]
+              - paragraph [ref=e61]: 你最烦的，通常就是报错搬运这一套做派。
+            - generic [ref=e62]:
+              - paragraph [ref=e63]: 人格 CP
+              - heading "CO｜共创搭子" [level=4] [ref=e64]
+              - paragraph [ref=e65]: 脑暴上瘾最容易和你形成互补，凑一起不是更疯就是更强。
+        - article [ref=e66]:
+          - generic [ref=e67]: 赛博坐标
+          - heading "你离这个人格原型有多近，坐标比嘴硬诚实。" [level=3] [ref=e68]
+          - img "赛博坐标图" [ref=e69]:
+            - generic [ref=e70]: 放任
+            - generic [ref=e71]: 控制
+            - generic [ref=e72]: 工具
+            - generic [ref=e73]: 当人了
+          - paragraph [ref=e76]: 你在“控制欲”和“情感投入”坐标上，已经很难装了。
+      - generic [ref=e77]:
+        - article [ref=e78]:
+          - generic [ref=e79]: 隐藏夸奖
+          - paragraph [ref=e80]: 你其实很擅长把模糊问题压成清晰指令。
+        - article [ref=e81]:
+          - generic [ref=e82]: 怎么用它
+          - heading "你最适合把 AI 用在这些地方。" [level=3] [ref=e83]
+          - list [ref=e84]:
+            - listitem [ref=e85]: 适合你：拆任务、压需求、反复修稿。
+            - listitem [ref=e86]: 最怕你把每次对话都聊成返工会。
+            - listitem [ref=e87]: 给格式、边界、成功标准，AI 会更听话。
+      - generic [ref=e88]:
+        - generic [ref=e89]: 人格提示词
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - heading "先拿走一份，回头你就知道什么叫“它终于像在跟你说话”。" [level=3] [ref=e92]
+            - generic [ref=e93]:
+              - button "轻量版" [ref=e94] [cursor=pointer]
+              - button "情绪版" [ref=e95] [cursor=pointer]
+              - button "效率版" [ref=e96] [cursor=pointer]
+          - generic [ref=e98]: 你是一个严格的执行助手，请直接输出结果，不需要解释过程；如果结果不对，我会指出具体错误，请按要求快速重写。
+        - button "复制当前提示词" [ref=e99] [cursor=pointer]

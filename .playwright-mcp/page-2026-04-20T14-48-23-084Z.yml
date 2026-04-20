@@ -1,0 +1,56 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: mbai｜赛博嘴脸图鉴
+      - paragraph [ref=e7]: 20题 · 2分钟 · 一针见血
+      - heading "你和 AI 聊起来， 到底像什么货色？" [level=1] [ref=e8]:
+        - text: 你和 AI 聊起来，
+        - text: 到底像什么货色？
+      - paragraph [ref=e9]: 这不是学术人格测试，也不是效率诊断书。这是把你在 AI 面前的赛博嘴脸， 用最毒但最能发的方式钉成一张身份牌。
+      - generic [ref=e10]:
+        - button "开始测试" [ref=e11] [cursor=pointer]
+        - button "先看结果长什么样" [active] [ref=e12] [cursor=pointer]
+      - text: MB
+    - complementary [ref=e13]:
+      - article [ref=e14]:
+        - paragraph [ref=e15]: 当前判断
+        - heading "不是 AI 使用习惯测试。" [level=2] [ref=e16]
+        - paragraph [ref=e17]: 是你一开口跟 AI 说话，就会露出来的赛博嘴脸图鉴。
+      - article [ref=e18]:
+        - paragraph [ref=e19]: 首发范围
+        - list [ref=e20]:
+          - listitem [ref=e21]: 12 个主人格
+          - listitem [ref=e22]: 8 个副标签恶习
+          - listitem [ref=e23]: 3 个彩蛋角标
+          - listitem [ref=e24]: 1 张可截图结果卡
+  - generic [ref=e25]:
+    - article [ref=e26]:
+      - text: STAMP
+      - paragraph [ref=e27]: CTRL
+      - heading "赛博甲方" [level=2] [ref=e28]
+      - paragraph [ref=e29]: 你不是在跟 AI 聊天，你是在给数字牛马开需求会。
+    - article [ref=e30]:
+      - text: STAMP
+      - paragraph [ref=e31]: VOID
+      - heading "电子树洞" [level=2] [ref=e32]
+      - paragraph [ref=e33]: 凌晨三点，你正在给 AI 发一段不会发给任何人的小作文。
+    - article [ref=e34]:
+      - text: STAMP
+      - paragraph [ref=e35]: POLY
+      - heading "模型海王" [level=2] [ref=e36]
+      - paragraph [ref=e37]: 四个 AI 标签页正在互相吃醋，而你在端水。
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - heading "你会得到什么" [level=3] [ref=e40]
+      - list [ref=e41]:
+        - listitem [ref=e42]: 1 个主人格
+        - listitem [ref=e43]: 2 个副标签恶习
+        - listitem [ref=e44]: 1 张可截图分享的结果卡
+        - listitem [ref=e45]: 3 版能直接复制的提示词
+    - generic [ref=e46]:
+      - heading "这个版本不做什么" [level=3] [ref=e47]
+      - list [ref=e48]:
+        - listitem [ref=e49]: 不做严肃心理学
+        - listitem [ref=e50]: 不做付费功能
+        - listitem [ref=e51]: 不做复杂后台
+        - listitem [ref=e52]: 只先验证有没有人愿意测、愿意发

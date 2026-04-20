@@ -1,0 +1,202 @@
+[
+  {
+    "id": "q1",
+    "text": "AI 思考超过 5 秒，你最可能：",
+    "options": [
+      {"id":"q1a","text":"继续等一下","dimensions":{"control":-1,"emotion":1,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":-1,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q1b","text":"发一句“继续”","dimensions":{"control":1,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":1,"expression":0},"tags":["SPAM"],"masterWeights":{}},
+      {"id":"q1c","text":"连发几句“快点”","dimensions":{"control":2,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":2,"expression":0},"tags":["SPAM","RAGE"],"masterWeights":{"CTRL":2}},
+      {"id":"q1d","text":"直接换另一个模型","dimensions":{"control":1,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":2,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{"POLY":2}}
+    ]
+  },
+  {
+    "id": "q2",
+    "text": "你更常把什么东西丢给 AI？",
+    "options": [
+      {"id":"q2a","text":"一个模糊任务：你帮我搞定","dimensions":{"control":1,"emotion":0,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["LAZY"],"masterWeights":{}},
+      {"id":"q2b","text":"一段聊天记录：你帮我回","dimensions":{"control":0,"emotion":0,"dependency":0,"social":2,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["SHOW"],"masterWeights":{"AGENT":2}},
+      {"id":"q2c","text":"一坨情绪：你帮我懂","dimensions":{"control":0,"emotion":2,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["RAGE"],"masterWeights":{"VOID":2}},
+      {"id":"q2d","text":"一个离谱念头：你帮我整更癫一点","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":2,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"LULZ":2,"CO":1}}
+    ]
+  },
+  {
+    "id": "q3",
+    "text": "当 AI 说“作为 AI 我不能……”时，你更可能：",
+    "options": [
+      {"id":"q3a","text":"算了，换个问法","dimensions":{"control":-1,"emotion":-1,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q3b","text":"给它补设定，继续试","dimensions":{"control":2,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":1,"multiModel":0,"urgency":0,"expression":0},"tags":["TROLL"],"masterWeights":{"CAST":2}},
+      {"id":"q3c","text":"让它别出戏","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":2,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"CAST":2}},
+      {"id":"q3d","text":"开始和它讲道理","dimensions":{"control":0,"emotion":1,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["TROLL"],"masterWeights":{"JURY":2}}
+    ]
+  },
+  {
+    "id": "q4",
+    "text": "面对一个重要问题，你会不会同时问多个 AI？",
+    "options": [
+      {"id":"q4a","text":"不会，一个就够了","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":-2,"urgency":0,"expression":0},"tags":[],"masterWeights":{"MONO":3}},
+      {"id":"q4b","text":"偶尔会，对比一下","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":1,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{}},
+      {"id":"q4c","text":"会，我想看谁更靠谱","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":2,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{"POLY":1}},
+      {"id":"q4d","text":"会，而且我还会把它们的回答互相丢给对方继续吵","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":1,"immersion":0,"multiModel":2,"urgency":0,"expression":0},"tags":["SHOW"],"masterWeights":{"JURY":3,"POLY":2}}
+    ]
+  },
+  {
+    "id": "q5",
+    "text": "你最希望 AI 给你的，不一定是答案，而是：",
+    "options": [
+      {"id":"q5a","text":"结构化结果","dimensions":{"control":1,"emotion":0,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["CITE"],"masterWeights":{"PAPER":2,"CTRL":1}},
+      {"id":"q5b","text":"情绪支持","dimensions":{"control":0,"emotion":2,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"VOID":2}},
+      {"id":"q5c","text":"陪伴和氛围感","dimensions":{"control":0,"emotion":2,"dependency":0,"social":0,"entertainment":0,"immersion":2,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"VOID":2,"CAST":1}},
+      {"id":"q5d","text":"乐子和素材","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":2,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["SHOW"],"masterWeights":{"LULZ":2,"CO":1}}
+    ]
+  },
+  {
+    "id": "q6",
+    "text": "你给 AI 发消息的开头通常是：",
+    "options": [
+      {"id":"q6a","text":"“请帮我……”","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":1},"tags":["FAKE"],"masterWeights":{}},
+      {"id":"q6b","text":"“直接说，我需要……”","dimensions":{"control":2,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":2},"tags":[],"masterWeights":{"CTRL":2}},
+      {"id":"q6c","text":"“在吗？”","dimensions":{"control":0,"emotion":1,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"VOID":1}},
+      {"id":"q6d","text":"直接复制粘贴问题，没有开头","dimensions":{"control":1,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":1,"expression":0},"tags":["LAZY","SPAM"],"masterWeights":{"DUMP":2}}
+    ]
+  },
+  {
+    "id": "q7",
+    "text": "当 AI 给了一个不太满意的回答，你会：",
+    "options": [
+      {"id":"q7a","text":"自己改改用","dimensions":{"control":-1,"emotion":0,"dependency":-1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q7b","text":"追问“能不能再好一点”","dimensions":{"control":1,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{"CTRL":1}},
+      {"id":"q7c","text":"换种问法重新来一遍","dimensions":{"control":1,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":1,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{"POLY":1}},
+      {"id":"q7d","text":"把问题丢给另一个 AI","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":2,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{"POLY":2}}
+    ]
+  },
+  {
+    "id": "q8",
+    "text": "你使用 AI 最频繁的场景是：",
+    "options": [
+      {"id":"q8a","text":"工作 / 学习产出","dimensions":{"control":1,"emotion":0,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["CITE"],"masterWeights":{"PAPER":2,"CTRL":1}},
+      {"id":"q8b","text":"情感倾诉 / 深夜陪伴","dimensions":{"control":0,"emotion":2,"dependency":2,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"VOID":2}},
+      {"id":"q8c","text":"社交代劳（回消息、写祝福）","dimensions":{"control":0,"emotion":0,"dependency":0,"social":2,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["SHOW"],"masterWeights":{"AGENT":2}},
+      {"id":"q8d","text":"整活 / 找乐子","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":2,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["SHOW"],"masterWeights":{"LULZ":2}}
+    ]
+  },
+  {
+    "id": "q9",
+    "text": "你更倾向于让 AI 扮演：",
+    "options": [
+      {"id":"q9a","text":"专业助手（不扮演，就是 AI）","dimensions":{"control":1,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":-2,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"CTRL":1,"PAPER":1}},
+      {"id":"q9b","text":"某个领域的专家","dimensions":{"control":1,"emotion":0,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["CITE"],"masterWeights":{"PAPER":1}},
+      {"id":"q9c","text":"朋友 / 恋人 / 树洞","dimensions":{"control":0,"emotion":2,"dependency":0,"social":0,"entertainment":0,"immersion":2,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"VOID":2,"CAST":1}},
+      {"id":"q9d","text":"任意角色（取决于我今天想玩什么）","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":2,"immersion":1,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"CAST":2,"LULZ":1}}
+    ]
+  },
+  {
+    "id": "q10",
+    "text": "如果 AI 连续三次都没理解你的意思，你会：",
+    "options": [
+      {"id":"q10a","text":"放弃，自己干","dimensions":{"control":-1,"emotion":0,"dependency":-1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q10b","text":"写一段更详细的提示词","dimensions":{"control":2,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"CTRL":2}},
+      {"id":"q10c","text":"换模型试试","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":2,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{"POLY":2}},
+      {"id":"q10d","text":"骂它一句然后继续","dimensions":{"control":0,"emotion":1,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["RAGE","SPAM"],"masterWeights":{"CTRL":1,"VOID":1}}
+    ]
+  },
+  {
+    "id": "q11",
+    "text": "你会保存或收藏自己觉得“写得很好”的 AI 回答吗？",
+    "options": [
+      {"id":"q11a","text":"经常，建了一个素材库","dimensions":{"control":0,"emotion":0,"dependency":1,"social":0,"entertainment":1,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["SHOW"],"masterWeights":{"CO":1,"LULZ":1}},
+      {"id":"q11b","text":"偶尔，觉得有用就存","dimensions":{"control":0,"emotion":0,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q11c","text":"很少，用完即走","dimensions":{"control":0,"emotion":0,"dependency":-1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q11d","text":"从不，AI 写的有什么好存的","dimensions":{"control":-1,"emotion":0,"dependency":-2,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"MONO":-1}}
+    ]
+  },
+  {
+    "id": "q12",
+    "text": "你更常对 AI 说：",
+    "options": [
+      {"id":"q12a","text":"“谢谢”","dimensions":{"control":0,"emotion":1,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":1},"tags":["FAKE"],"masterWeights":{}},
+      {"id":"q12b","text":"“不对”","dimensions":{"control":2,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["TROLL"],"masterWeights":{"CTRL":2,"JURY":1}},
+      {"id":"q12c","text":"“继续”","dimensions":{"control":1,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":1,"expression":0},"tags":["SPAM"],"masterWeights":{"CTRL":1}},
+      {"id":"q12d","text":"“哈哈”","dimensions":{"control":0,"emotion":1,"dependency":0,"social":0,"entertainment":1,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"LULZ":1,"CO":1}}
+    ]
+  },
+  {
+    "id": "q13",
+    "text": "你让 AI 帮你回复消息时，你会：",
+    "options": [
+      {"id":"q13a","text":"直接复制发送","dimensions":{"control":0,"emotion":0,"dependency":0,"social":2,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["LAZY","SHOW"],"masterWeights":{"AGENT":2}},
+      {"id":"q13b","text":"改一改，让它更像我说话","dimensions":{"control":1,"emotion":0,"dependency":0,"social":1,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"AGENT":1}},
+      {"id":"q13c","text":"只参考思路，自己重写","dimensions":{"control":1,"emotion":0,"dependency":-1,"social":1,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q13d","text":"从不让 AI 代劳社交","dimensions":{"control":0,"emotion":0,"dependency":0,"social":-2,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"VOID":-1,"MONO":-1}}
+    ]
+  },
+  {
+    "id": "q14",
+    "text": "当两个 AI 给出相反答案时，你：",
+    "options": [
+      {"id":"q14a","text":"选看起来更权威的","dimensions":{"control":0,"emotion":0,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["CITE"],"masterWeights":{"PAPER":1}},
+      {"id":"q14b","text":"自己判断哪个更合理","dimensions":{"control":1,"emotion":0,"dependency":-1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q14c","text":"让它们继续吵，我看戏","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":2,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["SHOW"],"masterWeights":{"JURY":2,"LULZ":1}},
+      {"id":"q14d","text":"再问第三个 AI","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":2,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{"POLY":2}}
+    ]
+  },
+  {
+    "id": "q15",
+    "text": "你对 AI 犯错的态度是：",
+    "options": [
+      {"id":"q15a","text":"理解，AI 也会犯错","dimensions":{"control":-1,"emotion":1,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q15b","text":"纠正它，教它怎么改","dimensions":{"control":2,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"CTRL":2}},
+      {"id":"q15c","text":"截图发出去嘲笑","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":2,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["SHOW"],"masterWeights":{"LULZ":2}},
+      {"id":"q15d","text":"立刻换一个 AI 问","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":2,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{"POLY":2}}
+    ]
+  },
+  {
+    "id": "q16",
+    "text": "你使用 AI 的频率最接近：",
+    "options": [
+      {"id":"q16a","text":"每天多次，离不开","dimensions":{"control":0,"emotion":0,"dependency":2,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"VOID":1,"CTRL":1}},
+      {"id":"q16b","text":"每天一次，有需求才用","dimensions":{"control":0,"emotion":0,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q16c","text":"每周几次，想起来才用","dimensions":{"control":0,"emotion":0,"dependency":-1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q16d","text":"很少用，还是信自己","dimensions":{"control":-1,"emotion":0,"dependency":-2,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"MONO":-1}}
+    ]
+  },
+  {
+    "id": "q17",
+    "text": "你给 AI 的提示词通常：",
+    "options": [
+      {"id":"q17a","text":"很长，很详细，有背景设定","dimensions":{"control":2,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":1,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"CAST":2,"CTRL":1}},
+      {"id":"q17b","text":"中等长度，说清楚需求","dimensions":{"control":1,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q17c","text":"很短，一句话","dimensions":{"control":-1,"emotion":0,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":1,"expression":0},"tags":["SPAM","LAZY"],"masterWeights":{"DUMP":2}},
+      {"id":"q17d","text":"没有固定风格，看心情","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":1,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"LULZ":1,"CO":1}}
+    ]
+  },
+  {
+    "id": "q18",
+    "text": "如果 AI 突然不能用了，你：",
+    "options": [
+      {"id":"q18a","text":"立刻找替代方案","dimensions":{"control":0,"emotion":0,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":2,"urgency":0,"expression":0},"tags":["CHECK"],"masterWeights":{"POLY":2}},
+      {"id":"q18b","text":"等它恢复","dimensions":{"control":0,"emotion":1,"dependency":1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"MONO":1,"VOID":1}},
+      {"id":"q18c","text":"算了，自己干","dimensions":{"control":-1,"emotion":0,"dependency":-1,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q18d","text":"去社交媒体吐槽","dimensions":{"control":0,"emotion":0,"dependency":0,"social":0,"entertainment":1,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":["SHOW","RAGE"],"masterWeights":{"LULZ":1}}
+    ]
+  },
+  {
+    "id": "q19",
+    "text": "你会因为 AI 的某个回答而感动或生气吗？",
+    "options": [
+      {"id":"q19a","text":"经常，把它当人了","dimensions":{"control":0,"emotion":2,"dependency":2,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"VOID":2,"CAST":1}},
+      {"id":"q19b","text":"偶尔，取决于回答质量","dimensions":{"control":0,"emotion":1,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{}},
+      {"id":"q19c","text":"很少，它只是工具","dimensions":{"control":0,"emotion":-2,"dependency":0,"social":0,"entertainment":0,"immersion":-1,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"CTRL":1,"PAPER":1}},
+      {"id":"q19d","text":"从不，我只看结果对不对","dimensions":{"control":1,"emotion":-2,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"CTRL":2,"DUMP":1}}
+    ]
+  },
+  {
+    "id": "q20",
+    "text": "描述一下你和 AI 的关系，最接近：",
+    "options": [
+      {"id":"q20a","text":"老板和员工","dimensions":{"control":2,"emotion":-2,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"CTRL":3}},
+      {"id":"q20b","text":"朋友 / 恋人","dimensions":{"control":-1,"emotion":2,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"VOID":2,"CAST":1}},
+      {"id":"q20c","text":"工具和使用者","dimensions":{"control":1,"emotion":-2,"dependency":0,"social":0,"entertainment":0,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"PAPER":1,"DUMP":1}},
+      {"id":"q20d","text":"玩具和玩家","dimensions":{"control":-1,"emotion":0,"dependency":0,"social":0,"entertainment":2,"immersion":0,"multiModel":0,"urgency":0,"expression":0},"tags":[],"masterWeights":{"LULZ":2,"CO":1}}
+    ]
+  }
+]

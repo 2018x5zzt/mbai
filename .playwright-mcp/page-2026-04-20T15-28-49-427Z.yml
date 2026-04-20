@@ -1,0 +1,45 @@
+- main [ref=e51]:
+  - generic [ref=e53]:
+    - complementary [ref=e54]:
+      - generic [ref=e55]: mbai｜赛博嘴脸图鉴
+      - generic [ref=e56]:
+        - strong [ref=e57]: "07"
+        - generic [ref=e58]: / 20
+      - paragraph [ref=e59]: 第 7 / 20 题 · 场景审问
+      - paragraph [ref=e62]: 这不是道德考试。别选理想里的你，选那个平时真的会这样跟 AI 说话的人。
+      - generic [ref=e63]:
+        - article [ref=e64]:
+          - paragraph [ref=e65]: 答题原则
+          - paragraph [ref=e66]: 凭直觉选，不用自证清白。
+        - article [ref=e67]:
+          - paragraph [ref=e68]: 当前目的
+          - paragraph [ref=e69]: 把你的真实开口习惯钉出来。
+      - generic [ref=e70]:
+        - button "上一题" [ref=e71] [cursor=pointer]
+        - button "重来" [ref=e72] [cursor=pointer]
+    - generic [ref=e73]:
+      - paragraph [ref=e74]: 嘴脸取证
+      - heading "当 AI 给了一个不太满意的回答，你会：" [level=2] [ref=e75]
+      - paragraph [ref=e76]: 选最像你平时会做的那个，不选你希望自己看起来比较体面的那个。
+      - generic [ref=e77]:
+        - button "A 自己改改用 这条最像你会脱口而出的反应" [ref=e78] [cursor=pointer]:
+          - generic [ref=e79]: A
+          - generic [ref=e80]:
+            - generic [ref=e81]: 自己改改用
+            - generic [ref=e82]: 这条最像你会脱口而出的反应
+        - button "B 追问“能不能再好一点” 这条最像你会脱口而出的反应" [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]: B
+          - generic [ref=e85]:
+            - generic [ref=e86]: 追问“能不能再好一点”
+            - generic [ref=e87]: 这条最像你会脱口而出的反应
+        - button "C 换种问法重新来一遍 这条最像你会脱口而出的反应" [ref=e88] [cursor=pointer]:
+          - generic [ref=e89]: C
+          - generic [ref=e90]:
+            - generic [ref=e91]: 换种问法重新来一遍
+            - generic [ref=e92]: 这条最像你会脱口而出的反应
+        - button "D 把问题丢给另一个 AI 这条最像你会脱口而出的反应" [ref=e93] [cursor=pointer]:
+          - generic [ref=e94]: D
+          - generic [ref=e95]:
+            - generic [ref=e96]: 把问题丢给另一个 AI
+            - generic [ref=e97]: 这条最像你会脱口而出的反应
+      - paragraph [ref=e98]: 选完就会直接跳下一题。整套答完大概两分钟。

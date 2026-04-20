@@ -1,0 +1,5 @@
+[
+  {"code":"MARTYR","title":"AI 殉道者","condition":"连续 5 题选择等待 / 温和倾向的选项","rate":0.3},
+  {"code":"CULT","title":"赛博 Cult 领袖","condition":"多模型倾向与情感投入归一化后都超过 0.8","rate":0.25},
+  {"code":"TURING","title":"图灵测试员","condition":"主人格为 JURY，且 TROLL + CHECK 触发次数双高","rate":0.4}
+]

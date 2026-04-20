@@ -1,0 +1,45 @@
+- main [ref=e3]:
+  - generic [ref=e5]:
+    - complementary [ref=e6]:
+      - generic [ref=e7]: mbai｜赛博嘴脸图鉴
+      - generic [ref=e8]:
+        - strong [ref=e9]: "06"
+        - generic [ref=e10]: / 20
+      - paragraph [ref=e11]: 第 6 / 20 题 · 场景审问
+      - paragraph [ref=e14]: 这不是道德考试。别选理想里的你，选那个平时真的会这样跟 AI 说话的人。
+      - generic [ref=e15]:
+        - article [ref=e16]:
+          - paragraph [ref=e17]: 答题原则
+          - paragraph [ref=e18]: 凭直觉选，不用自证清白。
+        - article [ref=e19]:
+          - paragraph [ref=e20]: 当前目的
+          - paragraph [ref=e21]: 把你的真实开口习惯钉出来。
+      - generic [ref=e22]:
+        - button "上一题" [ref=e23] [cursor=pointer]
+        - button "重来" [ref=e24] [cursor=pointer]
+    - generic [ref=e25]:
+      - paragraph [ref=e26]: 嘴脸取证
+      - heading "你给 AI 发消息的开头通常是：" [level=2] [ref=e27]
+      - paragraph [ref=e28]: 选最像你平时会做的那个，不选你希望自己看起来比较体面的那个。
+      - generic [ref=e29]:
+        - button "A “请帮我……” 这条最像你会脱口而出的反应" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: A
+          - generic [ref=e32]:
+            - generic [ref=e33]: “请帮我……”
+            - generic [ref=e34]: 这条最像你会脱口而出的反应
+        - button "B “直接说，我需要……” 这条最像你会脱口而出的反应" [ref=e35] [cursor=pointer]:
+          - generic [ref=e36]: B
+          - generic [ref=e37]:
+            - generic [ref=e38]: “直接说，我需要……”
+            - generic [ref=e39]: 这条最像你会脱口而出的反应
+        - button "C “在吗？” 这条最像你会脱口而出的反应" [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: C
+          - generic [ref=e42]:
+            - generic [ref=e43]: “在吗？”
+            - generic [ref=e44]: 这条最像你会脱口而出的反应
+        - button "D 直接复制粘贴问题，没有开头 这条最像你会脱口而出的反应" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]: D
+          - generic [ref=e47]:
+            - generic [ref=e48]: 直接复制粘贴问题，没有开头
+            - generic [ref=e49]: 这条最像你会脱口而出的反应
+      - paragraph [ref=e50]: 选完就会直接跳下一题。整套答完大概两分钟。

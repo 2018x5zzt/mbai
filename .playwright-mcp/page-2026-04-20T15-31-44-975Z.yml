@@ -1,0 +1,118 @@
+- main [ref=e116]:
+  - generic [ref=e117]:
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - paragraph [ref=e120]: mbai｜赛博嘴脸图鉴
+        - paragraph [ref=e121]: 需求暴君
+        - heading "赛博甲方" [level=1] [ref=e122]
+        - paragraph [ref=e123]: 你不是在跟 AI 聊天，你是在给数字牛马开需求会。
+        - paragraph [ref=e124]: 你这次露出来的，不是抽象人格，是一套很具体的 AI 使用嘴脸。罪证已经给你整理好了。
+        - generic [ref=e126]: SHOW｜晒命狂
+      - generic [ref=e127]:
+        - generic [ref=e128]: CTRL
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - generic [ref=e131]: 控制欲
+            - strong [ref=e132]: 59%
+          - generic [ref=e133]:
+            - generic [ref=e134]: 情感投入
+            - strong [ref=e135]: 51%
+    - generic [ref=e136]:
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - generic [ref=e139]: 人格档案
+          - heading "这就是你的赛博案底。" [level=3] [ref=e140]
+          - generic [ref=e141]:
+            - article [ref=e142]:
+              - paragraph [ref=e143]: 罪状
+              - paragraph [ref=e144]: 你把 AI 当 24 小时待命的乙方，连“请”字都懒得打，结尾永远跟着“不对 / 重来 / 太水了”。
+            - article [ref=e145]:
+              - paragraph [ref=e146]: 现场还原
+              - paragraph [ref=e147]: 复制一段需求，末尾加一句“你重新生成”，然后连发三次。
+            - article [ref=e148]:
+              - paragraph [ref=e149]: 赦免书
+              - paragraph [ref=e150]: 虽然你把 AI 当牛马，但你确实很擅长把“我觉得不太对”翻译成具体修改意见。
+        - generic [ref=e151]:
+          - generic [ref=e152]: 恶习叠加
+          - heading "你的毛病不是没有，是叠在一起更具体。" [level=3] [ref=e153]
+          - generic [ref=e154]:
+            - paragraph [ref=e155]: 叠加结论
+            - paragraph [ref=e156]: 你这次最明显的毛病是晒命狂：聊完第一反应就是截图发出去
+          - article [ref=e158]:
+            - paragraph [ref=e159]: SHOW
+            - heading "晒命狂" [level=4] [ref=e160]
+            - paragraph [ref=e161]: 截图聊天记录到处发。
+        - generic [ref=e162]:
+          - generic [ref=e163]: 人格提示词
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - heading "先拿一份走，回头你就知道什么叫终于说到点子上。" [level=3] [ref=e166]
+              - generic [ref=e167]:
+                - button "轻量版" [ref=e168] [cursor=pointer]
+                - button "情绪版" [ref=e169] [cursor=pointer]
+                - button "效率版" [ref=e170] [cursor=pointer]
+            - generic [ref=e172]: 请用结构化方式回应，分点陈述，每点不超过 20 字，优先给出可执行方案，再补充必要说明。
+          - button "复制当前提示词" [ref=e173] [cursor=pointer]
+      - complementary [ref=e174]:
+        - generic [ref=e175]:
+          - generic [ref=e176]: 传播模块
+          - heading "这张才是适合发出去的版本。" [level=3] [ref=e177]
+          - article [ref=e178]:
+            - generic [ref=e179]:
+              - paragraph [ref=e180]: mbai｜赛博嘴脸图鉴
+              - paragraph [ref=e181]: 需求暴君
+            - generic [ref=e182]: CTRL
+            - generic [ref=e183]:
+              - heading "赛博甲方" [level=2] [ref=e184]
+              - paragraph [ref=e185]: 你不是在跟 AI 聊天，你是在给数字牛马开需求会。
+              - generic [ref=e187]: SHOW｜晒命狂
+          - generic [ref=e188]:
+            - button "截图保存" [ref=e189] [cursor=pointer]
+            - button "复制文案" [ref=e190] [cursor=pointer]
+            - button "再测一次" [ref=e191] [cursor=pointer]
+        - article [ref=e192]:
+          - generic [ref=e193]: 关系网络
+          - heading "你不是单机人格，你有宿敌，也有互补搭子。" [level=3] [ref=e194]
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - paragraph [ref=e197]: 宿敌人格
+              - heading "DUMP｜代码乞丐" [level=4] [ref=e198]
+              - paragraph [ref=e199]: 你最烦的，通常就是报错搬运这一套做派。
+            - generic [ref=e200]:
+              - paragraph [ref=e201]: 人格 CP
+              - heading "CO｜共创搭子" [level=4] [ref=e202]
+              - paragraph [ref=e203]: 脑暴上瘾最容易和你形成互补，凑一起不是更疯就是更强。
+        - article [ref=e204]:
+          - generic [ref=e205]: 坐标与台阶
+          - heading "嘴硬可以，坐标不会替你圆。" [level=3] [ref=e206]
+          - img "赛博坐标图" [ref=e207]:
+            - generic [ref=e208]: 放任
+            - generic [ref=e209]: 控制
+            - generic [ref=e210]: 工具
+            - generic [ref=e211]: 当人了
+          - paragraph [ref=e214]: 你在“控制欲”和“情感投入”坐标上，已经很难装了。
+          - paragraph [ref=e215]: 你其实很擅长把模糊问题压成清晰指令。
+        - article [ref=e216]:
+          - generic [ref=e217]: 怎么用它
+          - heading "你最适合把 AI 用在这些地方。" [level=3] [ref=e218]
+          - generic [ref=e219]:
+            - article [ref=e220]:
+              - paragraph [ref=e221]: 适合你
+              - paragraph [ref=e222]: 适合你：拆任务、压需求、反复修稿。
+            - article [ref=e223]:
+              - paragraph [ref=e224]: 最怕你
+              - paragraph [ref=e225]: 最怕你把每次对话都聊成返工会。
+            - article [ref=e226]:
+              - paragraph [ref=e227]: 开口建议
+              - paragraph [ref=e228]: 给格式、边界、成功标准，AI 会更听话。
+    - generic:
+      - article:
+        - generic:
+          - paragraph: mbai｜赛博嘴脸图鉴
+          - paragraph: 需求暴君
+        - generic: CTRL
+        - generic:
+          - heading [level=2]: 赛博甲方
+          - paragraph: 你不是在跟 AI 聊天，你是在给数字牛马开需求会。
+          - generic:
+            - generic: SHOW｜晒命狂

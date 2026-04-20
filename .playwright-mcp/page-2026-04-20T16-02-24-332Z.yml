@@ -1,0 +1,28 @@
+- main [ref=e3]:
+  - generic [ref=e5]:
+    - complementary [ref=e6]:
+      - generic [ref=e7]: mbai｜赛博嘴脸图鉴
+      - generic [ref=e8]:
+        - strong [ref=e9]: "06"
+        - generic [ref=e10]: / 20
+      - paragraph [ref=e11]: 第 6 / 20 题 · 场景审问
+      - generic [ref=e14]:
+        - button "上一题" [ref=e15] [cursor=pointer]
+        - button "重来" [ref=e16] [cursor=pointer]
+    - generic [ref=e17]:
+      - paragraph [ref=e18]: 嘴脸取证
+      - heading "你给 AI 发消息的开头通常是：" [level=2] [ref=e19]
+      - paragraph [ref=e20]: 选最像你平时会做的那个，不选你希望自己看起来比较体面的那个。
+      - generic [ref=e21]:
+        - button "A “请帮我……”" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: A
+          - generic [ref=e25]: “请帮我……”
+        - button "B “直接说，我需要……”" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: B
+          - generic [ref=e29]: “直接说，我需要……”
+        - button "C “在吗？”" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: C
+          - generic [ref=e33]: “在吗？”
+        - button "D 直接复制粘贴问题，没有开头" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: D
+          - generic [ref=e37]: 直接复制粘贴问题，没有开头

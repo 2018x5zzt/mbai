@@ -1,0 +1,10 @@
+[
+  {"code":"SPAM","name":"连珠炮","description":"不等 AI 说完就打断，连续追问。","weight":1.2},
+  {"code":"FAKE","name":"假礼貌","description":"“请”和“谢谢”背后是冰冷的需求。","weight":0.8},
+  {"code":"TROLL","name":"杠精","description":"AI 说东你偏要西，专门找反例。","weight":1.0},
+  {"code":"CHECK","name":"不信邪","description":"同一问题问三遍验证一致性。","weight":1.1},
+  {"code":"SHOW","name":"晒命狂","description":"截图聊天记录到处发。","weight":1.3},
+  {"code":"RAGE","name":"发癫型","description":"用大写、感叹号、emoji 轰炸。","weight":1.2},
+  {"code":"CITE","name":"掉书袋","description":"要求 AI 给引用、出处、DOI。","weight":0.9},
+  {"code":"LAZY","name":"甩锅型","description":"复制别人的 prompt 改个名字就用。","weight":1.0}
+]

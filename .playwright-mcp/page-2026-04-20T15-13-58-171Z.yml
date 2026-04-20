@@ -1,0 +1,24 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: mbai｜赛博嘴脸图鉴
+        - paragraph [ref=e8]: 第 6 / 20 题
+      - generic [ref=e9]:
+        - button "上一题" [ref=e10] [cursor=pointer]
+        - button "重来" [ref=e11] [cursor=pointer]
+    - heading "你给 AI 发消息的开头通常是：" [level=2] [ref=e14]
+    - generic [ref=e15]:
+      - button "A “请帮我……”" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: A
+        - generic [ref=e18]: “请帮我……”
+      - button "B “直接说，我需要……”" [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: B
+        - generic [ref=e21]: “直接说，我需要……”
+      - button "C “在吗？”" [ref=e22] [cursor=pointer]:
+        - generic [ref=e23]: C
+        - generic [ref=e24]: “在吗？”
+      - button "D 直接复制粘贴问题，没有开头" [ref=e25] [cursor=pointer]:
+        - generic [ref=e26]: D
+        - generic [ref=e27]: 直接复制粘贴问题，没有开头
+    - paragraph [ref=e28]: 别想太久，凭你平时对 AI 的嘴脸直觉选。
