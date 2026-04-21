@@ -348,12 +348,12 @@ function renderHero() {
         </ul>
       </div>
       <div class="intro-card paper-panel">
-        <p class="section-kicker">这个版本不做什么</p>
+        <p class="section-kicker">注意事项</p>
         <ul style="margin-top: 12px; color: var(--ink-soft); padding-left: 20px; line-height: 1.8;">
-          <li>不做严肃心理学</li>
-          <li>不做付费功能</li>
-          <li>不做复杂后台</li>
-          <li>只先验证有没有人愿意测、愿意发</li>
+          <li>不是严肃心理学，别拿来当诊断书</li>
+          <li>所有数据只在你浏览器里算，不存服务器</li>
+          <li>答完可以截图发朋友圈，但别太认真</li>
+          <li>觉得准是巧合，觉得不准——那才正常</li>
         </ul>
       </div>
     </section>
