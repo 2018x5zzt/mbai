@@ -1,4 +1,28 @@
-node_modules
-dist
-.vite
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Vite
+.vite/
+
+# Debug logs
 npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Playwright MCP
+.playwright-mcp/
+
+# Screenshots (design reference, not source code)
+docs/screenshots/
+*.png
