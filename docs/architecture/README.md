@@ -49,7 +49,7 @@ state.answers[currentQuestion] = optionIndex
     ▼
 sessionStorage 持久化 (断点续答)
     │
-    ▼ (答完 20 题)
+    ▼ (答完 25 题)
 evaluateMbaiResult(answers)
     │
     ├─→ calculateMaster(answers)
@@ -63,9 +63,9 @@ evaluateMbaiResult(answers)
     │     └─ 取 score >= 2 的 top 2
     │
     └─→ calculateEasterEgg(answers, dimensions, masterCode)
-          ├─ MARTYR: 温和选项 >= 5 且 random < 0.3
-          ├─ CULT: multiModel > 0.8 且 emotion > 0.8 且 random < 0.25
-          └─ TURING: JURY 且 TROLL+CHECK >= 7 且 random < 0.4
+          ├─ MARTYR: PATIENT 标签 >= 4 且无 RAGE 标签
+          ├─ CULT: multiModel 归一化 >= 0.75 且 emotion 归一化 >= 0.65 且 CHECK >= 4
+          └─ TURING: JURY 主人格 且 TROLL >= 3 且 CHECK >= 4
 ```
 
 ## 模块依赖
@@ -125,18 +125,23 @@ interface SessionState {
 ### 归一化公式
 
 ```
-normalized = max(0, min(1, (raw + 40) / 80))
+normalized = max(0, min(1, (raw - min) / (max - min)))
 ```
 
-20 题理论总分范围 -40 ~ +40，映射到 0 ~ 1。
+动态计算每个维度的理论 min/max 边界（遍历所有题目选项的最小值/最大值之和），映射到 0 ~ 1。
 
 ### 主人格匹配
 
 ```
-totalScore = masterWeights[code] - distance(userPoint, master.dimension) * 5
+totalScore = masterWeights[code] + traitSimilarity * 4 - coordinateDistance * 2
 ```
 
-取 totalScore 最高的主人格。distance 为欧氏距离，权重系数 5 用于平衡维度距离与直接投票权重。
+三项公式：
+- `masterWeights[code]`：选项直接投票的权重累加
+- `traitSimilarity`：用户维度与人格 traitVector 的归一化相似度（0~1），权重 4
+- `coordinateDistance`：userPoint 与人格 dimension 的欧氏距离，权重 2
+
+取 totalScore 最高的主人格。traitVector 定义每个人格在关键维度上的目标归一化值。
 
 ## 页面结构
 

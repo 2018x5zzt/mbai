@@ -22,6 +22,9 @@ export interface MasterPersonality {
   compliment: string;
   enemy: string;
   partner: string;
+  enemyLine: string;
+  partnerLine: string;
+  traitVector: Partial<Record<keyof Dimensions, number>>;
   promptLight: string;
   promptVibe: string;
   promptEfficiency: string;

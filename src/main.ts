@@ -10,7 +10,7 @@ import {
   questionBank,
 } from "./lib/evaluate";
 
-const app = document.querySelector<HTMLDivElement>("#app");
+const app = document.querySelector<HTMLDivElement>("#app")!;
 
 if (!app) {
   throw new Error("Missing #app root");
@@ -283,7 +283,7 @@ function renderHero() {
     <section class="home-hero">
       <div class="home-hero__lead">
         <div class="hero__badge">MBAI | 赛博嘴脸图鉴</div>
-        <p class="home-hero__eyebrow" style="color: var(--muted); margin: 8px 0;">No.01 · 20题 · 2分钟 · 只看嘴脸</p>
+        <p class="home-hero__eyebrow" style="color: var(--muted); margin: 8px 0;">No.01 · 25题 · 3分钟 · 只看嘴脸</p>
         <h1 class="home-hero__title">
           你和 AI 聊<br>起来，<br>
           <span class="text-accent">到底像什</span><br>
@@ -304,7 +304,7 @@ function renderHero() {
           <p class="home-note__label">首发范围</p>
           <ul class="home-note__list" style="list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-direction: column; gap: 8px;">
             <li style="display: flex; align-items: baseline; gap: 8px;"><strong style="font-size: 2rem; font-weight: 900;">12</strong><span style="color: var(--ink-soft);"> 个人格图腾</span></li>
-            <li style="display: flex; align-items: baseline; gap: 8px;"><strong style="font-size: 2rem; font-weight: 900;">8</strong><span style="color: var(--ink-soft);"> 个副标签恶习</span></li>
+            <li style="display: flex; align-items: baseline; gap: 8px;"><strong style="font-size: 2rem; font-weight: 900;">13</strong><span style="color: var(--ink-soft);"> 个副标签恶习</span></li>
           </ul>
         </article>
       </aside>

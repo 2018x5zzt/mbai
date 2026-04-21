@@ -22,7 +22,7 @@ export const masterBank = masters;
 export const subTagBank = tags;
 export const easterEggBank = eggs;
 
-const DIM_KEYS: Array<keyof Dimensions> = [
+const DIM_KEYS: ReadonlyArray<keyof Dimensions> = [
   'control',
   'emotion',
   'dependency',
@@ -32,18 +32,58 @@ const DIM_KEYS: Array<keyof Dimensions> = [
   'multiModel',
   'urgency',
   'expression',
-];
+] as const;
 
-const SUB_TAG_CLAUSES: Record<string, string> = {
+const SUB_TAG_CLAUSES: Readonly<Record<string, string>> = {
   SPAM: '需求还没说完就想催稿',
-  FAKE: '嘴上很客气，手上照样在赶进度',
+  FAKE: '嘴上请帮忙，实际每个字都在催交付',
   TROLL: 'AI 说一句你总想顺手挑刺',
   CHECK: '同一问题必须反复验明正身',
   SHOW: '聊完第一反应就是截图发出去',
   RAGE: '情绪一上来连标点都开始打人',
-  CITE: '一句话没听完先追着它要出处',
+  CITE: 'AI 刚开口就追问链接、出处和 DOI',
   LAZY: '上下文能少给一个字就少给一个字',
+  RITUAL: '遇事先让 AI 给生活编一套象征解释',
+  CHAIN: '一个点子不滚成系列就浑身难受',
+  NOCONTEXT: '问题抛得像谜语，指望 AI 自己补全世界',
+  STICKY: '不是不换，是旧模型已经被你盘出包浆了',
+  PATIENT: '别人在催 AI，你在等它慢慢想',
 };
+
+// --- C01: DimensionBounds ---
+
+export type DimensionBounds = Record<keyof Dimensions, { min: number; max: number }>;
+
+export function getDimensionBounds(questionList: Question[]): DimensionBounds {
+  const bounds = {} as DimensionBounds;
+  DIM_KEYS.forEach((key) => {
+    bounds[key] = questionList.reduce(
+      (acc, question) => {
+        const values = question.options.map((o) => o.dimensions[key] ?? 0);
+        return {
+          min: acc.min + Math.min(...values),
+          max: acc.max + Math.max(...values),
+        };
+      },
+      { min: 0, max: 0 },
+    );
+  });
+  return bounds;
+}
+
+export const dimensionBounds: DimensionBounds = getDimensionBounds(allQuestions);
+
+export function normalizeDimension(
+  raw: number,
+  key: keyof Dimensions,
+  bounds: DimensionBounds,
+): number {
+  const { min, max } = bounds[key];
+  if (max === min) return 0.5;
+  return Math.max(0, Math.min(1, (raw - min) / (max - min)));
+}
+
+// --- Helpers ---
 
 export function createEmptyDimensions(): Dimensions {
   return {
@@ -59,24 +99,40 @@ export function createEmptyDimensions(): Dimensions {
   };
 }
 
-export function normalizeDimension(raw: number): number {
-  return Math.max(0, Math.min(1, (raw + 40) / 80));
-}
-
-function createSeed(answerIndexes: number[]): number {
-  return answerIndexes.reduce((acc, value, index) => {
-    return (acc * 131 + (value + 1) * (index + 17)) >>> 0;
-  }, 7);
-}
-
-function seededRandom(seed: number): number {
-  const next = (seed * 1664525 + 1013904223) >>> 0;
-  return next / 4294967296;
-}
-
 function getOption(question: Question, optionIndex: number): Option {
   return question.options[optionIndex];
 }
+
+// --- C02: collectAllTags ---
+
+function collectAllTags(answerIndexes: number[]): string[] {
+  const result: string[] = [];
+  answerIndexes.forEach((optionIndex, questionIndex) => {
+    const option = getOption(allQuestions[questionIndex], optionIndex);
+    option.tags.forEach((tag) => result.push(tag));
+  });
+  return result;
+}
+
+// --- C03: traitVector similarity ---
+
+function calculateTraitSimilarity(
+  userDimensions: Dimensions,
+  traitVector: Partial<Record<keyof Dimensions, number>>,
+  bounds: DimensionBounds,
+): number {
+  let similarity = 0;
+  let count = 0;
+  for (const [key, target] of Object.entries(traitVector)) {
+    const dimKey = key as keyof Dimensions;
+    const normalized = normalizeDimension(userDimensions[dimKey], dimKey, bounds);
+    similarity += 1 - Math.abs(normalized - target);
+    count += 1;
+  }
+  return count > 0 ? similarity / count : 0;
+}
+
+// --- Core evaluation ---
 
 export function calculateMaster(answerIndexes: number[]) {
   const dimensions = createEmptyDimensions();
@@ -97,8 +153,8 @@ export function calculateMaster(answerIndexes: number[]) {
   });
 
   const userPoint: [number, number] = [
-    normalizeDimension(dimensions.control),
-    normalizeDimension(dimensions.emotion),
+    normalizeDimension(dimensions.control, 'control', dimensionBounds),
+    normalizeDimension(dimensions.emotion, 'emotion', dimensionBounds),
   ];
 
   let bestMaster = masters[0];
@@ -107,7 +163,14 @@ export function calculateMaster(answerIndexes: number[]) {
   masters.forEach((master) => {
     const [mx, my] = master.dimension;
     const distance = Math.sqrt((userPoint[0] - mx) ** 2 + (userPoint[1] - my) ** 2);
-    const totalScore = masterScores[master.code] - distance * 5;
+    const traitSimilarity = calculateTraitSimilarity(
+      dimensions,
+      master.traitVector,
+      dimensionBounds,
+    );
+    const totalScore = masterScores[master.code] * 1.0
+      + traitSimilarity * 4.0
+      - distance * 2.0;
 
     if (totalScore > bestScore) {
       bestScore = totalScore;
@@ -166,43 +229,40 @@ export function getRelation(master: MasterPersonality, type: 'enemy' | 'partner'
 }
 
 export function buildRelationLine(master: MasterPersonality, type: 'enemy' | 'partner'): string {
-  const relation = getRelation(master, type);
   if (type === 'enemy') {
-    return `你最烦的，通常就是${relation.slug}这一套做派。`;
+    return master.enemyLine;
   }
-  return `${relation.slug}最容易和你形成互补，凑一起不是更疯就是更强。`;
+  return master.partnerLine;
 }
+
+// --- C02: Deterministic easter egg ---
 
 export function calculateEasterEgg(
   answerIndexes: number[],
   dimensions: Dimensions,
   masterCode: string,
 ): EasterEgg | undefined {
-  const seed = createSeed(answerIndexes);
-  const random = seededRandom(seed);
-  const normalizedMulti = normalizeDimension(dimensions.multiModel);
-  const normalizedEmotion = normalizeDimension(dimensions.emotion);
+  const allTags = collectAllTags(answerIndexes);
 
-  const patientCount = answerIndexes.reduce((count, optionIndex, questionIndex) => {
-    const urgency = getOption(allQuestions[questionIndex], optionIndex).dimensions.urgency;
-    return urgency < 0 ? count + 1 : count;
-  }, 0);
-
-  if (patientCount >= 5 && random < 0.3) {
-    return eggs.find((egg) => egg.code === 'MARTYR');
+  // MARTYR: PATIENT >= 4 and no RAGE
+  const patientCount = allTags.filter((t) => t === 'PATIENT').length;
+  const rageCount = allTags.filter((t) => t === 'RAGE').length;
+  if (patientCount >= 4 && rageCount === 0) {
+    return eggs.find((e) => e.code === 'MARTYR');
   }
 
-  if (normalizedMulti > 0.8 && normalizedEmotion > 0.8 && random < 0.25) {
-    return eggs.find((egg) => egg.code === 'CULT');
+  // CULT: high multiModel + high emotion + CHECK >= 4
+  const normalizedMulti = normalizeDimension(dimensions.multiModel, 'multiModel', dimensionBounds);
+  const normalizedEmotion = normalizeDimension(dimensions.emotion, 'emotion', dimensionBounds);
+  const checkCount = allTags.filter((t) => t === 'CHECK').length;
+  if (normalizedMulti >= 0.75 && normalizedEmotion >= 0.65 && checkCount >= 4) {
+    return eggs.find((e) => e.code === 'CULT');
   }
 
-  const trollCheck = answerIndexes.reduce((count, optionIndex, questionIndex) => {
-    const currentTags = getOption(allQuestions[questionIndex], optionIndex).tags;
-    return currentTags.includes('TROLL') || currentTags.includes('CHECK') ? count + 1 : count;
-  }, 0);
-
-  if (masterCode === 'JURY' && trollCheck >= 7 && random < 0.4) {
-    return eggs.find((egg) => egg.code === 'TURING');
+  // TURING: JURY master + TROLL >= 3 + CHECK >= 4
+  const trollCount = allTags.filter((t) => t === 'TROLL').length;
+  if (masterCode === 'JURY' && trollCount >= 3 && checkCount >= 4) {
+    return eggs.find((e) => e.code === 'TURING');
   }
 
   return undefined;
