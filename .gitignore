@@ -26,3 +26,4 @@ Thumbs.db
 # Screenshots (design reference, not source code)
 docs/screenshots/
 *.png
+_design-demos/
