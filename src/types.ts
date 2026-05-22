@@ -34,6 +34,7 @@ export interface SubTag {
   code: string;
   name: string;
   description: string;
+  clause: string;
   weight: number;
 }
 

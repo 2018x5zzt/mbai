@@ -34,22 +34,6 @@ const DIM_KEYS: ReadonlyArray<keyof Dimensions> = [
   'expression',
 ] as const;
 
-const SUB_TAG_CLAUSES: Readonly<Record<string, string>> = {
-  SPAM: '需求还没说完就想催稿',
-  FAKE: '嘴上请帮忙，实际每个字都在催交付',
-  TROLL: 'AI 说一句你总想顺手挑刺',
-  CHECK: '同一问题必须反复验明正身',
-  SHOW: '聊完第一反应就是截图发出去',
-  RAGE: '情绪一上来连标点都开始打人',
-  CITE: 'AI 刚开口就追问链接、出处和 DOI',
-  LAZY: '上下文能少给一个字就少给一个字',
-  RITUAL: '遇事先让 AI 给生活编一套象征解释',
-  CHAIN: '一个点子不滚成系列就浑身难受',
-  NOCONTEXT: '问题抛得像谜语，指望 AI 自己补全世界',
-  STICKY: '不是不换，是旧模型已经被你盘出包浆了',
-  PATIENT: '别人在催 AI，你在等它慢慢想',
-};
-
 // --- C01: DimensionBounds ---
 
 export type DimensionBounds = Record<keyof Dimensions, { min: number; max: number }>;
@@ -206,11 +190,12 @@ export function buildSubTagDescription(selectedTags: SubTag[]): string {
   }
 
   if (selectedTags.length === 1) {
-    return `你这次最明显的毛病是${selectedTags[0].name}：${SUB_TAG_CLAUSES[selectedTags[0].code] ?? selectedTags[0].description}`;
+    const [only] = selectedTags;
+    return `你这次最明显的毛病是${only.name}：${only.clause}`;
   }
 
   const [first, second] = selectedTags;
-  return `副标签叠加：${first.name} × ${second.name}。你属于那种${SUB_TAG_CLAUSES[first.code] ?? first.description}，而且${SUB_TAG_CLAUSES[second.code] ?? second.description}的人。`;
+  return `副标签叠加：${first.name} × ${second.name}。你属于那种${first.clause}，而且${second.clause}的人。`;
 }
 
 export function getPrompt(master: MasterPersonality, mode: 'light' | 'vibe' | 'efficiency'): string {

@@ -3,78 +3,91 @@
     "code": "SPAM",
     "name": "连珠炮",
     "description": "不等 AI 说完就打断，连续追问。",
+    "clause": "需求还没说完就想催稿",
     "weight": 1.2
   },
   {
     "code": "FAKE",
     "name": "客气式催稿",
     "description": "嘴上请帮忙，实际每个字都在催交付。",
+    "clause": "嘴上请帮忙，实际每个字都在催交付",
     "weight": 0.9
   },
   {
     "code": "TROLL",
     "name": "杠精",
     "description": "AI 说东你偏要西，专门找反例。",
+    "clause": "AI 说一句你总想顺手挑刺",
     "weight": 1.0
   },
   {
     "code": "CHECK",
     "name": "不信邪",
     "description": "同一问题问三遍验证一致性。",
+    "clause": "同一问题必须反复验明正身",
     "weight": 1.1
   },
   {
     "code": "SHOW",
     "name": "晒命狂",
     "description": "截图聊天记录到处发。",
+    "clause": "聊完第一反应就是截图发出去",
     "weight": 1.3
   },
   {
     "code": "RAGE",
     "name": "发癫型",
     "description": "用大写、感叹号、emoji 轰炸。",
+    "clause": "情绪一上来连标点都开始打人",
     "weight": 1.2
   },
   {
     "code": "CITE",
     "name": "出处警察",
     "description": "AI 刚开口，你已经在追问链接、出处和 DOI。",
+    "clause": "AI 刚开口就追问链接、出处和 DOI",
     "weight": 0.9
   },
   {
     "code": "LAZY",
     "name": "甩锅型",
     "description": "复制别人的 prompt 改个名字就用。",
+    "clause": "上下文能少给一个字就少给一个字",
     "weight": 1.0
   },
   {
     "code": "RITUAL",
     "name": "仪式感上头",
     "description": "遇事先让 AI 给生活编一套象征解释。",
+    "clause": "遇事先让 AI 给生活编一套象征解释",
     "weight": 1.2
   },
   {
     "code": "CHAIN",
     "name": "接力狂",
     "description": "一个点子不滚成系列就浑身难受。",
+    "clause": "一个点子不滚成系列就浑身难受",
     "weight": 1.1
   },
   {
     "code": "NOCONTEXT",
     "name": "上下文裸奔",
     "description": "问题抛得像谜语，指望 AI 自己补全世界。",
+    "clause": "问题抛得像谜语，指望 AI 自己补全世界",
     "weight": 1.2
   },
   {
     "code": "STICKY",
     "name": "工具恋旧",
     "description": "不是不换，是旧模型已经被你盘出包浆了。",
+    "clause": "不是不换，是旧模型已经被你盘出包浆了",
     "weight": 1.1
   },
   {
     "code": "PATIENT",
     "name": "佛系体质",
     "description": "别人在催 AI，你在等它慢慢想。",
+    "clause": "别人在催 AI，你在等它慢慢想",
     "weight": 0.8
   }
 ]
